@@ -1,8 +1,4 @@
-/**
- * Created by ssinha on 11/9/16.
- */
-
-import com.MyLinkedList.*;
+import com.MyLinkedList.LinkedList;
 
 public class run {
 
@@ -12,8 +8,9 @@ public class run {
         int myElementOne = 56;
 
         myList.add(myElementOne);
+        myList.add(78);
 
-        System.out.println(myList.);
+        System.out.println(myList.get(1));
 
     }
 

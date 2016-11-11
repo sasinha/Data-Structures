@@ -5,7 +5,7 @@ package com.MyLinkedList;
  */
 
 // com.MyLinkedList.Node in a linked list. <bounded type parameter> = restricts
-public class Node {
+class Node {
 
     // Value in node
     int index;

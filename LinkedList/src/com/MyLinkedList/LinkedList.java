@@ -6,8 +6,16 @@ public class LinkedList {
     // Initialize head and tail
     private Node head = null;
     private Node tail = null;
+    private Node temp = null;
 
-    // Empty constructor
+    //Counter to quickly get size without iteration
+    private int counter = 0;
+    private int size() {
+        return counter;
+    }
+
+
+    // Constructor
     public LinkedList() {
     }
 
@@ -34,7 +42,25 @@ public class LinkedList {
             tail.element = inElem;
         }
 
+        //Increment counter with new node added in
+        counter++;
+
         }
+
+    public int get(int index) {
+        assert (index >= 0 && index < size());
+
+        //Temp used to check nodes
+        temp = head;
+        for(int i = 0; i < index; i++) {
+
+            //iterate through list
+            temp = temp.next;
+        }
+
+        // Return correct indexed element
+        return temp.element;
+    }
 
     }
 

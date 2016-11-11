@@ -8,6 +8,7 @@ package com.MyLinkedList;
 public class Node {
 
     // Value in node
+    int index;
     int element;
 
     // Points to next and previous nodes
